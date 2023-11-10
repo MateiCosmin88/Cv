@@ -5,7 +5,7 @@
     padding: 0;
   }
   img {
-    max-width: 100%; /* Make images responsive */
+    max-width: 150px; /* Make images responsive */
     height: auto;
   }
   .container {
@@ -21,4 +21,7 @@
     display: flex; /* Improved layout for skills */
     justify-content: space-between;
     margin-bottom: 10px;
+  }
+  .cos {
+    text-transform: animate__flipInX;
   }
