@@ -1,8 +1,119 @@
-.background-image {
-  background-image: url('https://www.pexels.com/photo/gray-and-white-wallpaper-1103970/'); /* Corrected path */
-  background-size: cover; 
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #ffffff;
+/* Use this file for your styles or add this content to style.css */
+
+/* Resetting default styles for better control */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  
+
+/* Ensuring full width and enabling scroll */
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Background image styles */
+.background-image {
+  background-image: url('./asets/test.jpg'); /* Ensure the path is correct */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Header and Navigation styles */
+header {
+  text-align: center;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white; /* Ensure this color is readable on your background */
+}
+
+/* Main content styles */
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: white;
+}
+
+/* Skill-row styles */
+.skill-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+/* Accessibility improvements */
+a:focus, button:focus {
+  outline: 2px
+/* Base font size for responsive text sizing */
+}
+html {
+  font-size: 100%; /* this equals to 16px */
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* or choose a web-safe font like Georgia, Times, etc. */
+  line-height: 1.6; /* this increases the space between lines */
+  color: #333; /* a darker shade for better readability */
+  background-color: #f4f4f4; /* a light shade that does not strain the eyes */
+}
+
+.container {
+  max-width: 800px; /* limits the line length of text */
+  margin: 0 auto; /* centers the container */
+  padding: 0 1rem; /* adds padding on the sides */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem; /* adds space below headings */
+  font-weight: normal; /* optional: reduces the boldness if preferred */
+}
+
+p {
+  margin-bottom: 1rem; /* adds space between paragraphs */
+}
+
+a {
+  color: #0066cc; /* ensures links are noticeable */
+  text-decoration: none; /* removes underline from links */
+}
+
+a:hover, a:focus {
+  text-decoration: underline; /* adds underline on hover/focus for better indication */
+}
+
+/* For screen readers only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Add these styles to your existing CSS rules where appropriate */

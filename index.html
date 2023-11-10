@@ -1,81 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- Responsive meta tag -->
-    <title>Cosmin's Website</title>
-    <style>
-     
-    </style>
-  </head>
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive meta tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Cosmin's Website</title>
-  <style> 
-  
-  </style>
 </head>
 
-<body>
-  <div class="background-image"></div>
-  <div class="container">
-    <!-- Use div instead of table for layout -->
-    <header>
-      <img src="asets/Profile.jpg" alt="Cosmin Matei" />
-      <h1>Cosmin Matei</h1>
-      <p><em>Software Engineer Student at <strong><a href="http://www.rcl.ac.uk/">Regent College London</a></strong></em></p>
-      <p>I am a student at Regent College London, currently studying Software Engineering and App Development.</p>
-    </header>
-
-    <hr />
-
-    <section>
-      <h3>Courses</h3>
+<body class="background-image">
+  <header>
+    <img src="asets/Profile.jpg" alt="Cosmin Matei" />
+    <h1>Cosmin Matei</h1>
+    <nav>
       <ul>
-        <li><a href="https://www.rcl.ac.uk/courses/subjects/engineering-and-computing/">Software Engineering</a></li>
-        <li><a href="https://www.rcl.ac.uk/courses/detail/bsc-hons-computing-level-6/">Computer Science</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#work-experience">Work Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="Hobbies.html">My Hobbies</a></li>
+        <li><a href="Contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    <p><em>Software Engineer Student at <strong><a href="http://www.rcl.ac.uk/" aria-label="Regent College London website">Regent College London</a></strong></em></p>
+    <p>I am a student at Regent College London, currently studying Software Engineering and App Development.</p>
+  </header>
+
+  <main>
+    <section id="courses">
+      <h2>Courses</h2>
+      <ul>
+        <li><a href="https://www.rcl.ac.uk/courses/subjects/engineering-and-computing/" aria-label="Software Engineering courses at Regent College London">Software Engineering</a></li>
+        <li><a href="https://www.rcl.ac.uk/courses/detail/bsc-hons-computing-level-6/" aria-label="Computer Science courses at Regent College London">Computer Science</a></li>
       </ul>
     </section>
 
-    <hr />
-
-    <section>
-      <h3>Work Experience</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Dates</th>
-            <th>Work</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>April 2020-January 2022</td>
-            <td>Security Officer at Kings Security</td>
-          </tr>
-          <tr>
-            <td>2022-Present</td>
-            <td>Vehicle Technician at The Trade Centre Group</td>
-          </tr>
-        </tbody>
-      </table>
+    <section id="work-experience">
+      <h2>Work Experience</h2>
+      <!-- Use description list for work experience -->
+      <dl>
+        <dt>April 2020-January 2022</dt>
+        <dd>Security Officer at Kings Security</dd>
+        <dt>2022-Present</dt>
+        <dd>Vehicle Technician at The Trade Centre Group</dd>
+      </dl>
     </section>
 
-    <hr />
-
-    <section>
-      <a href="Hobbies.html">My Hobbies</a>
-      <a href="Contact.html">Contact Me</a>
-    </section>
-
-    <hr/>
-
-    <section>
-      <h3>Skills</h3>
+    <section id="skills">
+      <h2>Skills</h2>
       <div class="skill-row">
         <span>Adobe: ⭐⭐⭐⭐⭐</span>
         <span>Microsoft: ⭐⭐⭐⭐⭐</span>
@@ -85,8 +55,10 @@
         <span>iOS Development: ⭐⭐⭐⭐⭐</span>
       </div>
     </section>
-  </div>
+  </main>
 
-      <hr/>
-
+  <footer>
+    <p>© 2023 Cosmin Matei. All rights reserved.</p>
+  </footer>
+</body>
 </html>
