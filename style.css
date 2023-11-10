@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem; /* adds space below headings */
   font-weight: bolder; /* optional: reduces the boldness if preferred */
   color: aliceblue;
-  font-size: 7rem; 
+  font-size: 18px; 
 }
 
 p {
