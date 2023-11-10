@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     background-image: url(/asets/background.jpg);
-    background-size: cover; 
+    background-size: auto; 
     background-repeat: no-repeat;
     color: #ffffff;
   }
