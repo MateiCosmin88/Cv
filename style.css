@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
   }
+  img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+  }
   .container {
     width: 80%;
     margin: auto;
