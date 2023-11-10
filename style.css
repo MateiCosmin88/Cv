@@ -10,7 +10,7 @@
     overflow: hidden;
   }
   img {
-    max-width: 100%; /* Make images responsive */
+    max-width: auto; /* Make images responsive */
     height: auto;
   }
   table {
