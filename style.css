@@ -9,10 +9,7 @@
     margin: auto;
     overflow: hidden;
   }
-  img {
-    max-width: auto; /* Make images responsive */
-    height: auto;
-  }
+
   table {
     width: 100%;
   }
