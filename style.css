@@ -25,4 +25,10 @@
   .cos {
     text-transform: animate__flipInX;
   }
-  
+  body {
+    background-image: url('asets/background.jpg'); /* Corrected path */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+  }
