@@ -66,18 +66,20 @@ footer {
 
 /* Accessibility improvements */
 a:focus, button:focus {
-  outline: 2px
-/* Base font size for responsive text sizing */
+  outline: 2px solid blue; /* Specify the outline color and style */
 }
+
+/* Base font size for responsive text sizing */
 html {
   font-size: 100%; /* this equals to 16px */
 }
 
 body {
-  font-family: 'Arial', sans-serif; /* or choose a web-safe font like Georgia, Times, etc. */
+  font-family: 'Roboto', 'Arial', sans-serif; /* Specify fallback font */
   line-height: 1.6; /* this increases the space between lines */
   color: #333; /* a darker shade for better readability */
   background-color: #f4f4f4; /* a light shade that does not strain the eyes */
+  color: aliceblue;
 }
 
 .container {
@@ -88,7 +90,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem; /* adds space below headings */
-  font-weight: normal; /* optional: reduces the boldness if preferred */
+  font-weight: bolder; /* optional: reduces the boldness if preferred */
+  color: aliceblue;
+  font-size: 7rem; 
 }
 
 p {
@@ -96,10 +100,12 @@ p {
 }
 
 a {
-  color: #0066cc; /* ensures links are noticeable */
+  color: #bbd5f0; /* ensures links are noticeable */
   text-decoration: none; /* removes underline from links */
+  font-size: 2em;
+  margin-left: 2em;
+  
 }
-
 a:hover, a:focus {
   text-decoration: underline; /* adds underline on hover/focus for better indication */
 }
@@ -114,6 +120,9 @@ a:hover, a:focus {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+.work {
+  margin-left: 25em;
 }
 
 /* Add these styles to your existing CSS rules where appropriate */
