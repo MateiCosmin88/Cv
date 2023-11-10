@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Cosmin's Website</title>
-
+    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:ital,wght@1,300&display=swap"
@@ -15,11 +15,23 @@
   </head>
 
   <body class="background-image">
-    <header>
-      <img src="asets/Profile.jpg" alt="Cosmin Matei" />
+    <header id="header">
+      
       <h1 style="color: aliceblue">Cosmin Matei</h1>
       <nav>
-        <a href="Contact.html" class="nav-button">Courses</a>
+        <button class="glowing-btn1">
+          <span class="glowing-txt">C<span class="faulty-letter">O</span>URSES</span>
+          </button>
+          <button class="glowing-btn2">
+            <span class="glowing-txt">W<span class="faulty-letter">O</span>RK EXPIRIENCE</span>
+            </button>
+            <button class="glowing-btn3">
+              <span class="glowing-txt">S<span class="faulty-letter">K</span>ILLS</span>
+              </button>
+              <button class="glowing-btn4">
+                <span class="glowing-txt">M<span class="faulty-letter">Y</span>HOBIES</span>
+                </button>
+      
         <ul>
           <li><a href="#courses">Courses</a></li>
           <li><a href="#work-experience">Work Experience</a></li>
@@ -47,7 +59,8 @@
     </header>
 
     <main>
-      <section id="courses">
+      <div id="wrapper-main"></div>
+      <section>
         <h2>Courses</h2>
         <ul>
           <li>
@@ -66,18 +79,19 @@
           </li>
         </ul>
       </section>
-     <div id="Work">
-      <section id="work-experience">
-        <h2>Work Experience</h2>
-        <!-- Use description list for work experience -->
-        <dl>
-          <dt>April 2020-January 2022</dt>
-          <dd>Security Officer at Kings Security</dd>
-          <dt>2022-Present</dt>
-          <dd>Vehicle Technician at The Trade Centre Group</dd>
-        </dl>
-      </section>
-     </div>
+    </div>
+      <div id="Work">
+        <section id="work-experience">
+          <h2>Work Experience</h2>
+          <!-- Use description list for work experience -->
+          <dl>
+            <dt>April 2020-January 2022</dt>
+            <dd>Security Officer at Kings Security</dd>
+            <dt>2022-Present</dt>
+            <dd>Vehicle Technician at The Trade Centre Group</dd>
+          </dl>
+        </section>
+      </div>
       <section id="skills">
         <h2>Skills</h2>
         <div class="skill-row">
@@ -91,8 +105,9 @@
       </section>
     </main>
 
-    <footer>
+    <footer id="footer">
       <p>© 2023 Cosmin Matei. All rights reserved.</p>
     </footer>
+   
   </body>
 </html>

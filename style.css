@@ -4,7 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.wrapper-main {
+  width: 1000px;
+  margin: 0 auto;
+}
 /* Ensuring full width and enabling scroll */
 html, body {
   height: 100%;
@@ -18,7 +21,14 @@ html, body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+  display: flex;
+  flex-direction: column
+  
+ 
+  
+  
+  };
+
 
 /* Header and Navigation styles */
 header {
@@ -137,5 +147,273 @@ a:hover, a:focus {
 }
 
 .nav-button:hover {
-  background-color: darkblue;
+  background-color: rgb(14, 243, 52);
+}
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+:root {
+  --glow-color: hsl(234, 84%, 52%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+.glowing-btn1, .glowing-btn2, .glowing-btn3, .glowing-btn4 {
+  position: relative;
+  padding: 0.35em 1em; /* Adjusts internal space around the text */
+  font-family: "Raleway", sans-serif;
+  font-size: 1em; /* Adjust for appropriate text size */
+  font-weight: 900;
+  letter-spacing: normal; /* Adjust as needed, 'normal' or a smaller value for closer letters */
+  border: 0.15em solid var(--glow-color);
+  border-radius: 0.45em;
+  background: none;
+  color: var(--glow-color);
+  cursor: pointer;
+  display: inline;
+  .button-container {
+    display: grid;
+    place-items: center; /* Center both horizontally and vertically */
+    min-height: 100vh;
+  }
+  
+  
+  
+
+  /* Auto width and height based on content */
+  width: auto;
+  height: auto;
+
+  /* Glowing effect */
+  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color), 0px 0px 0.5em 0px var(--glow-color);
+  animation: border-flicker 2s linear infinite;
+}
+
+/* Responsive font size adjustment */
+@media (max-width: 600px) {
+  .glowing-btn1, .glowing-btn2, .glowing-btn3, .glowing-btn4 {
+    font-size: 0.75em; /* Smaller font size for small screens */
+  }
+}
+
+/* Keyframes for animations */
+@keyframes border-flicker {
+  /* Your existing animation keyframes */
+}
+
+
+.glowing-txt {
+  float: left;
+  margin-right: -0.8em;
+  -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--glow-color);
+  -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--glow-color);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+  animation: text-flicker 4s linear infinite;
+}
+
+.faulty-letter {
+  opacity: 0.5;
+  animation: faulty-flicker 2s linear infinite;
+}
+
+.glowing-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  filter: blur(1em);
+  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  background: var(--glow-color);
+  pointer-events: none;
+}
+
+.glowing-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  background-color: var(--glow-color);
+  box-shadow: 0 0 2em 0.2em var(--glow-color);
+  transition: opacity 100ms linear;
+}
+
+.glowing-btn:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: none;
+  animation: none;
+}
+
+.glowing-btn:hover .glowing-txt {
+  animation: none;
+}
+
+.glowing-btn:hover .faulty-letter {
+  animation: none;
+  text-shadow: none;
+  opacity: 1;
+}
+
+.glowing-btn:hover:before {
+  filter: blur(1.5em);
+  opacity: 1;
+}
+
+.glowing-btn:hover:after {
+  opacity: 1;
+}
+
+@keyframes faulty-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 0.1;
+  }
+  4% {
+    opacity: 0.5;
+  }
+  19% {
+    opacity: 0.5;
+  }
+  21% {
+    opacity: 0.1;
+  }
+  23% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  83% {
+    opacity: 0.4;
+  }
+
+  87% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  8% {
+    opacity: 0.1;
+  }
+
+  9% {
+    opacity: 1;
+  }
+
+  12% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+  72% {
+    opacity: 0.2;
+  }
+
+  77% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 1;
+  }
+  4% {
+    opacity: 0.1;
+  }
+
+  8% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .glowing-btn{
+    font-size: 1em;
+  }
+}
+.courses {
+  display: flex;
+  align-items: baseline;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Adjust the height as needed */
+  text-align: center; /* To center the text inside the section */
+}
+
+section {
+  /* If you want to limit the width of the section and center its content */
+  max-width: 600px; /* or any other value */
+  margin: 0 auto;
+}
+.header {
+ position:relative;
+ text-align: center;
+  /* Define a fixed height or padding as needed */
+  padding: 20px 0;
+}
+footer {
+  /* Style your footer */
+
+  text-align: center;
+  padding: 20px 0;
 }
