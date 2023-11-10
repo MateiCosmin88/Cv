@@ -6,8 +6,7 @@
     background-image: url(/asets/background.jpg);
     background-size: cover; 
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    
+    color: #ffffff;
   }
   img {
     max-width: 150px; /* Make images responsive */
