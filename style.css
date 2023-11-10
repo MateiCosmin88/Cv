@@ -4,15 +4,16 @@
     margin: 0;
     padding: 0;
   }
+  img {
+    max-width: 150px; /* Make images responsive */
+    height: auto;
+  }
   .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
   }
-  img {
-    max-width: 100%; /* Make images responsive */
-    height: auto;
-  }
+
   table {
     width: 100%;
   }
@@ -21,3 +22,7 @@
     justify-content: space-between;
     margin-bottom: 10px;
   }
+  .cos {
+    text-transform: animate__flipInX;
+  }
+  
