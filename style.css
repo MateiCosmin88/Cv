@@ -14,9 +14,7 @@
     overflow: hidden;
   }
 
-  table {
-    width: 100%;
-  }
+  
   .skill-row {
     display: flex; /* Improved layout for skills */
     justify-content: space-between;
