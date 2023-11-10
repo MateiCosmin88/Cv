@@ -175,49 +175,32 @@ body {
   align-items: center;
   background: black;
 }
+
 .glowing-btn1, .glowing-btn2, .glowing-btn3, .glowing-btn4 {
   position: relative;
-  padding: 0.35em 1em; /* Adjusts internal space around the text */
-  font-family: "Raleway", sans-serif;
-  font-size: 1em; /* Adjust for appropriate text size */
-  font-weight: 900;
-  letter-spacing: normal; /* Adjust as needed, 'normal' or a smaller value for closer letters */
+  color: var(--glow-color);
+  cursor: pointer;
+  padding: 0.35em 1em;
   border: 0.15em solid var(--glow-color);
   border-radius: 0.45em;
   background: none;
-  color: var(--glow-color);
-  cursor: pointer;
-  display: inline;
-  .button-container {
-    display: grid;
-    place-items: center; /* Center both horizontally and vertically */
-    min-height: 100vh;
-  }
-  
-  
-  
-
-  /* Auto width and height based on content */
+  perspective: 2em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  font-weight: 900;
+  letter-spacing: 1em;
   width: auto;
   height: auto;
+  
 
-  /* Glowing effect */
-  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color), 0px 0px 0.5em 0px var(--glow-color);
+  -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
   animation: border-flicker 2s linear infinite;
 }
-
-/* Responsive font size adjustment */
-@media (max-width: 600px) {
-  .glowing-btn1, .glowing-btn2, .glowing-btn3, .glowing-btn4 {
-    font-size: 0.75em; /* Smaller font size for small screens */
-  }
-}
-
-/* Keyframes for animations */
-@keyframes border-flicker {
-  /* Your existing animation keyframes */
-}
-
 
 .glowing-txt {
   float: left;
