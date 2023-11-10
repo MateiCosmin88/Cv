@@ -1,18 +1,2 @@
- /* Add some basic styling */
- body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  img {
-    max-width: 150px; /* Make images responsive */
-    height: auto;
-  }
-  .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-  }
 
-  
   
