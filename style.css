@@ -180,7 +180,11 @@ a:focus {
   text-align: center;
   /* Centers the text */
 }
-
+nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 /*Mobile*/
 @media screen and (min-width: 480px){
