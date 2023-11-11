@@ -202,11 +202,23 @@ nav{
     justify-content: center;
   }
   }
-}
+
 
 /*Tablet*/
  @media screen and (min-width: 768px) {
-
+  body {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100vh; /* Optional: You can set a height to center vertically within the viewport */
+    font-size: 18px; 
+  }
+  nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
  }
 
 /*Desktop*/
