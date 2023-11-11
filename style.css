@@ -180,11 +180,7 @@ a:focus {
   text-align: center;
   /* Centers the text */
 }
-nav{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 
 /*Mobile*/
 @media screen and (min-width: 480px){
@@ -194,32 +190,18 @@ nav{
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
     height: 100vh; /* Optional: You can set a height to center vertically within the viewport */
-    font-size: 16px; 
+    font-size: 18px; 
   }
-  nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  nav {
     font-size: 16px;
+    display: flex;
+    flex-direction: row;
   }
-  }
-
+}
 
 /*Tablet*/
  @media screen and (min-width: 768px) {
-  body {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    height: 100vh; /* Optional: You can set a height to center vertically within the viewport */
-    font-size: 18px; 
-  }
-  nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+
  }
 
 /*Desktop*/
@@ -232,10 +214,10 @@ nav{
     height: 100vh; /* Optional: You can set a height to center vertically within the viewport */
     font-size: 18px; 
   }
-  nav{
+  nav {
+    font-size: 16px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
   }
 }
   
