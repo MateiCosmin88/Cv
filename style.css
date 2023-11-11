@@ -195,17 +195,6 @@ a:focus {
 
  }
 
-/*Desktop*/
-@media screen and (min-width: 992px) {
-  body {
- 
-    display: contents;
-    justify-content: flex-start; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    font-size: 18px; 
-  }
-  
-}
   
 
 footer {
