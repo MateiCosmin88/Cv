@@ -8,6 +8,8 @@
 .wrapper-main {
   width: 1000px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 .name {
   font-weight: bold;
@@ -61,13 +63,7 @@ nav  {
 }
 
 /* Main content styles */
-main {
-  padding: 1rem;
-  display: flex;
-  justify-content: space-around;
-  display: flex;
-  flex-direction: column;
-}
+
 
 section {
   margin-bottom: 1rem;
@@ -194,11 +190,6 @@ a:focus {
     height: 100vh; /* Optional: You can set a height to center vertically within the viewport */
     font-size: 18px; 
   }
-  nav {
-    font-size: 16px;
-    display: flex;
-    flex-direction: row;
-  }
 }
 
 /*Tablet*/
@@ -216,11 +207,7 @@ a:focus {
     height: 100vh; /* Optional: You can set a height to center vertically within the viewport */
     font-size: 18px; 
   }
-  nav {
-    font-size: 16px;
-    display: flex;
-    flex-direction: row;
-  }
+  
 }
   
 
