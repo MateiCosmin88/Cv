@@ -1,15 +1,21 @@
 /* Resetting default styles for better control */
-* {
+* head {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .wrapper-main {
   width: 1000px;
   margin: 0 auto;
 }
+.name {
+  font-weight: bold;
+  font-size: 20px;
+}
 /* Ensuring full width and enabling scroll */
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -17,35 +23,39 @@ html, body {
 
 /* Background image styles */
 .background-image {
-  background-image: url('./asets/test.jpg'); /* Ensure the path is correct */
+  background-image: url('./asets/test.jpg');
+  /* Ensure the path is correct */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column
-  
- 
-  
-  
-  };
+}
+.profile{
+  max-height: 200px;
+  max-width: auto;
+}
 
 
 /* Header and Navigation styles */
 header {
   text-align: center;
   padding: 1rem;
+
 }
 
-nav ul {
+header ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 1rem;
+  color: white;
 }
 
-nav a {
+nav  {
   text-decoration: none;
-  color: white; /* Ensure this color is readable on your background */
+  color: white;
+  /* Ensure this color is readable on your background */
 }
 
 /* Main content styles */
@@ -61,7 +71,8 @@ section {
 footer {
   text-align: center;
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  background: rgba(0, 0, 0, 0.7);
+  /* Semi-transparent black */
   color: white;
 }
 
@@ -73,50 +84,66 @@ footer {
 }
 
 /* Accessibility improvements */
-a:focus, button:focus {
-  outline: 2px solid blue; /* Specify the outline color and style */
+a:focus,
+button:focus {
+  outline: 2px solid blue;
+  /* Specify the outline color and style */
 }
 
 /* Base font size for responsive text sizing */
 html {
-  font-size: 100%; /* this equals to 16px */
+  font-size: 100%;
+  /* this equals to 16px */
 }
 
 body {
-  font-family: 'Roboto', 'Arial', sans-serif; /* Specify fallback font */
+  font-family: 'Roboto', 'Arial', sans-serif;
+  /* Specify fallback font */
   font-weight: bold;
-  line-height: 1.6; /* this increases the space between lines */
-  color: #333; /* a darker shade for better readability */
-  background-color: #f4f4f4; /* a light shade that does not strain the eyes */
+  line-height: 1.6;
+  /* this increases the space between lines */
+  color: #333;
+  /* a darker shade for better readability */
+  background-color: #f4f4f4;
+  /* a light shade that does not strain the eyes */
   color: aliceblue;
 }
 
-.container {
-  max-width: 800px; /* limits the line length of text */
-  margin: 0 auto; /* centers the container */
-  padding: 0 1rem; /* adds padding on the sides */
-}
 
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5rem; /* adds space below headings */
-  font-weight: bolder; /* optional: reduces the boldness if preferred */
-  color: rgb(171, 216, 255);
-  font-size: 18px; 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: .5rem;
+  /* adds space below headings */
+  font-weight: bolder;
+  /* optional: reduces the boldness if preferred */
+  color: withe;
+  font-size: 18px;
 }
 
 p {
-  margin-bottom: 1rem; /* adds space between paragraphs */
+  margin-bottom: 1rem;
+  /* adds space between paragraphs */
 }
 
 a {
-  color: #bbd5f0; /* ensures links are noticeable */
-  text-decoration: none; /* removes underline from links */
-  font-size: 2em;
+  color: white;
+  /* ensures links are noticeable */
+  text-decoration: none;
+  /* removes underline from links */
+  font-size: 1.5em;
   margin-left: 2em;
-  
+
 }
-a:hover, a:focus {
-  text-decoration: underline; /* adds underline on hover/focus for better indication */
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  /* adds underline on hover/focus for better indication */
 }
 
 /* For screen readers only */
@@ -130,6 +157,7 @@ a:hover, a:focus {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
 .work {
   margin-left: 25em;
 }
@@ -139,267 +167,48 @@ a:hover, a:focus {
   padding: 10px 20px;
   background-color: blue;
   color: white;
-  text-decoration: none; /* Removes the underline from links */
+  text-decoration: none;
+  /* Removes the underline from links */
   border: none;
   border-radius: 5px;
-  display: inline-block; /* Allows padding and width/height to be set */
-  text-align: center; /* Centers the text */
+  display: inline-block;
+  /* Allows padding and width/height to be set */
+  text-align: center;
+  /* Centers the text */
 }
 
-.nav-button:hover {
-  background-color: rgb(14, 243, 52);
-}
-@import url("https://fonts.googleapis.com/css?family=Raleway");
 
-:root {
-  --glow-color: hsl(234, 84%, 52%);
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+/*Mobile*/
+@media screen and (min-width: 480px){
+  main {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100vh; /* Optional: You can set a height to center vertically within the viewport */
+    font-size: 18px; 
+  }
+  nav {
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+  }
 }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: black;
-}
+/*Tablet*/
+ @media screen and (min-width: 768px) {
 
-.glowing-btn1, .glowing-btn2, .glowing-btn3, .glowing-btn4 {
-  position: relative;
-  color: var(--glow-color);
-  cursor: pointer;
-  padding: 0.35em 1em;
-  border: 0.15em solid var(--glow-color);
-  border-radius: 0.45em;
-  background: none;
-  perspective: 2em;
-  font-family: "Raleway", sans-serif;
-  font-size: 1em;
-  font-weight: 900;
-  letter-spacing: 1em;
-  width: auto;
-  height: auto;
+ }
+
+/*Desktop*/
+@media screen and (min-width: 992px) {
+
+}
   
 
-  -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
-  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
-  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
-  animation: border-flicker 2s linear infinite;
-}
-
-.glowing-txt {
-  float: left;
-  margin-right: -0.8em;
-  -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
-    0 0 0.45em var(--glow-color);
-  -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
-    0 0 0.45em var(--glow-color);
-  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
-  animation: text-flicker 4s linear infinite;
-}
-
-.faulty-letter {
-  opacity: 0.5;
-  animation: faulty-flicker 2s linear infinite;
-}
-
-.glowing-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.7;
-  filter: blur(1em);
-  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
-  background: var(--glow-color);
-  pointer-events: none;
-}
-
-.glowing-btn::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  z-index: -1;
-  background-color: var(--glow-color);
-  box-shadow: 0 0 2em 0.2em var(--glow-color);
-  transition: opacity 100ms linear;
-}
-
-.glowing-btn:hover {
-  color: rgba(0, 0, 0, 0.8);
-  text-shadow: none;
-  animation: none;
-}
-
-.glowing-btn:hover .glowing-txt {
-  animation: none;
-}
-
-.glowing-btn:hover .faulty-letter {
-  animation: none;
-  text-shadow: none;
-  opacity: 1;
-}
-
-.glowing-btn:hover:before {
-  filter: blur(1.5em);
-  opacity: 1;
-}
-
-.glowing-btn:hover:after {
-  opacity: 1;
-}
-
-@keyframes faulty-flicker {
-  0% {
-    opacity: 0.1;
-  }
-  2% {
-    opacity: 0.1;
-  }
-  4% {
-    opacity: 0.5;
-  }
-  19% {
-    opacity: 0.5;
-  }
-  21% {
-    opacity: 0.1;
-  }
-  23% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.5;
-  }
-  83% {
-    opacity: 0.4;
-  }
-
-  87% {
-    opacity: 1;
-  }
-}
-
-@keyframes text-flicker {
-  0% {
-    opacity: 0.1;
-  }
-
-  2% {
-    opacity: 1;
-  }
-
-  8% {
-    opacity: 0.1;
-  }
-
-  9% {
-    opacity: 1;
-  }
-
-  12% {
-    opacity: 0.1;
-  }
-  20% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0.3;
-  }
-  30% {
-    opacity: 1;
-  }
-
-  70% {
-    opacity: 0.7;
-  }
-  72% {
-    opacity: 0.2;
-  }
-
-  77% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 0.9;
-  }
-}
-
-@keyframes border-flicker {
-  0% {
-    opacity: 0.1;
-  }
-  2% {
-    opacity: 1;
-  }
-  4% {
-    opacity: 0.1;
-  }
-
-  8% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .glowing-btn{
-    font-size: 1em;
-  }
-}
-.courses {
-  display: flex;
-  align-items: baseline;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100vh; /* Adjust the height as needed */
-  text-align: center; /* To center the text inside the section */
-}
-
-section {
-  /* If you want to limit the width of the section and center its content */
-  max-width: 600px; /* or any other value */
-  margin: 0 auto;
-}
-.header {
- position:relative;
- text-align: center;
-  /* Define a fixed height or padding as needed */
-  padding: 20px 0;
-}
 footer {
-  /* Style your footer */
+  background-color: transparent; /* or simply omit this line */
+}
 
-  text-align: center;
-  padding: 1px 0;
-}
-.namesz {
-  font-size: 152em;
-}
+ 
+   
