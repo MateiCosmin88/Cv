@@ -55,6 +55,8 @@ header ul {
 nav  {
   text-decoration: none;
   color: white;
+  display: flex;
+  flex-direction: column;
   /* Ensure this color is readable on your background */
 }
 
