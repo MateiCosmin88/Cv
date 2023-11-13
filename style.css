@@ -201,6 +201,7 @@ nav ul li {
     justify-content: flex-start; /* Center items horizontally */
     align-items: center; /* Center items vertically */
     height: 100vh; /* Optional: You can set a height to center vertically within the viewport */
+<<<<<<< HEAD
     font-size: 18px; 
   } #header {
     position:fixed;
@@ -208,6 +209,10 @@ nav ul li {
     
 
     }
+=======
+    font-size: 16px; 
+  }
+>>>>>>> e85b2045ed172132969009f1b9d6a822d914365e
 }
 
 /*Tablet*/
