@@ -95,10 +95,15 @@ footer {
   display: flex;
 }
 #bttab {
-  border:solid black ;
+  border: black ;
   border-radius: 15px;
   background: rgba(0, 0, 0, 0.7);
   margin-bottom: 5px;
+  margin-left: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 @media screen and (min-width: 768px) {
   .links {
@@ -108,9 +113,7 @@ footer {
 
   }
 
-  nav ul li {
-    padding: 0;  
-    margin:0;
+  nav ul li {  
     text-align: center;
     color: white;
     display: inline-block;
