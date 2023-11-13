@@ -10,19 +10,17 @@
 }
 
 h1 h2 h3 a {
-    
-    margin-bottom: .5rem;
-    /* adds space below headings */
-    font-weight: bolder;
-    /* optional: reduces the boldness if preferred */
-    color: withe;
-    font-size: 18px;
 
-  }
+  margin-bottom: .5rem;
+  /* adds space below headings */
+  font-weight: bolder;
+  /* optional: reduces the boldness if preferred */
+  color: white;
+  font-size: 18px;
 
-html{
-  height: -web-fill-available;
 }
+
+
 html,
 body {
   height: 100%;
@@ -46,17 +44,17 @@ body {
 
 .profile {
   max-height: 200px;
-  max-width: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 a {
   color: white;
   /* ensures links are noticeable */
   text-decoration: none;
   /* removes underline from links */
-  font-size: 1,5em;
+  font-size: 1em;
   margin-left: 2em;
   text-align: center;
 
@@ -90,12 +88,12 @@ footer {
   background-image: url('./asets/test.jpg');
   /* Ensure the path is correct */
   background-size: cover;
-  background-position: cover;
   background-repeat: no-repeat;
   display: flex;
 }
+
 #bttab {
-  border: black ;
+  border: black;
   border-radius: 15px;
   background: rgba(0, 0, 0, 0.7);
   margin-bottom: 5px;
@@ -105,16 +103,17 @@ footer {
   padding-top: 4px;
   padding-bottom: 4px;
 }
+
 @media screen and (min-width: 768px) {
   .links {
     text-align: center;
     display: inline-block;
-    
+
 
   }
-  
 
-  nav ul li {  
+
+  nav ul li {
     text-align: center;
     color: white;
     display: inline-block;
@@ -124,7 +123,7 @@ footer {
     position: relative;
     margin: 0 auto;
     padding: 2px;
-    
+
   }
 
   a {
@@ -137,7 +136,7 @@ footer {
     justify-content: center;
     align-items: center;
     display: flex;
-   
+
 
   }
 
@@ -146,8 +145,9 @@ footer {
     text-decoration: underline;
     /* adds underline on hover/focus for better indication */
   }
+
   #bttab {
-    border: black ;
+    border: black;
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.7);
     margin-bottom: 5px;
@@ -165,7 +165,7 @@ footer {
   .links {
     text-align: center;
     display: inline-block;
-    
+
 
   }
 
@@ -179,7 +179,7 @@ footer {
     flex-direction: row;
     /* Ensure this color is readable on your background */
     font-size: 14px;
-    
+
   }
 
   a {
@@ -194,7 +194,7 @@ footer {
     display: flex;
     margin-bottom: 1em;
     background-color: transparent, !important;
-    border: none !important;
+    border: none;
 
   }
 
@@ -203,11 +203,12 @@ footer {
     text-decoration: underline;
     /* adds underline on hover/focus for better indication */
   }
+
   .skill-row {
     display: flex;
     justify-content: space-around;
     margin-bottom: 1rem;
   }
-  
+
 
 }
