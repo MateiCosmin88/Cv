@@ -20,7 +20,9 @@ h1 h2 h3 a {
 
   }
 
-
+html{
+  height: -web-fill-available;
+}
 html,
 body {
   height: 100%;
@@ -36,7 +38,7 @@ body {
   background-color: #f4f4f4;
   /* a light shade that does not strain the eyes */
   color: aliceblue;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -92,7 +94,12 @@ footer {
   background-repeat: no-repeat;
   display: flex;
 }
-
+#bttab {
+  border:solid black ;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  margin-bottom: 5px;
+}
 @media screen and (min-width: 768px) {
   .links {
     text-align: center;
@@ -101,7 +108,7 @@ footer {
 
   }
 
-  nav ul li {
+  nav  {
     padding: 0;  
     margin:0;
     text-align: center;
@@ -111,7 +118,7 @@ footer {
     /* Ensure this color is readable on your background */
     font-size: 14px;
     position: relative;
-    margin: 2px;
+    margin: 0 auto;
     padding: 2px;
     
   }
@@ -126,10 +133,7 @@ footer {
     justify-content: center;
     align-items: center;
     display: flex;
-    border: black !important;
-    border-radius: 15px;
-    background: rgba(0, 0, 0, 0.7);
-    margin-bottom: 5px;
+   
 
   }
 
@@ -138,6 +142,7 @@ footer {
     text-decoration: underline;
     /* adds underline on hover/focus for better indication */
   }
+  
 
 }
 
@@ -152,7 +157,7 @@ footer {
   nav ul li {
     padding-top: 5rem;
     padding: 0;
-    margin: 0;
+  
     text-align: center;
     color: white;
     display: inline-block;
@@ -173,6 +178,8 @@ footer {
     align-items: center;
     display: flex;
     margin-bottom: 1em;
+    background-color: transparent !important;
+    border: none !important;
 
   }
 
