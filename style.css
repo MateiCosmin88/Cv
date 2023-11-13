@@ -1,24 +1,31 @@
 /* Resetting default styles for better control */
-* head {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.wrapper-main {
-  width: 1000px;
-  margin: 0 auto;
+.links {
+  display: none;
 }
-.name {
-  font-weight: bold;
-  font-size: 20px;
-}
-/* Ensuring full width and enabling scroll */
+
+h1 h2 h3 a {
+    
+    margin-bottom: .5rem;
+    /* adds space below headings */
+    font-weight: bolder;
+    /* optional: reduces the boldness if preferred */
+    color: withe;
+    font-size: 18px;
+
+  }
+
+
 html,
 body {
   height: 100%;
   width: 100%;
-  overflow-x:hidden;
+  overflow-x: hidden;
   font-family: 'Roboto', 'Arial', sans-serif;
   /* Specify fallback font */
   font-weight: bold;
@@ -30,186 +37,76 @@ body {
   /* a light shade that does not strain the eyes */
   color: aliceblue;
   margin: 0;
-  background-image: url('/path/to/image.jpg');
-  
-   
-}
-
-/* Background image styles */
-.background-image {
-  background-image: url('./asets/test.jpg');
-  /* Ensure the path is correct */
-  background-size:cover;
-  background-position:cover;
-  background-repeat: no-repeat;
-  display: flex;
-
-}
-.profile{
-  max-height: 200px;
-  max-width: auto;
-}
-
-
-/* Header and Navigation styles */
-header {
   text-align: center;
-  padding: 1rem;
-
-}
-
-header ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap:inherit;
-  color: white;
-}
-
-nav  {
-  padding-top: 5rem;
-  text-decoration: none;
-  color: white;
   display: flex;
   flex-direction: column;
-  /* Ensure this color is readable on your background */
 }
 
-/* Main content styles */
-
-
-section {
-  margin-bottom: 1rem;
+.profile {
+  max-height: 200px;
+  max-width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Footer styles */
 footer {
   text-align: center;
-  margin-bottom: -5px;
+  margin: 7px;
   background: rgba(0, 0, 0, 0.7);
   /* Semi-transparent black */
   color: white;
-  display: inline-flex;
   vertical-align: top;
+  background-color: transparent;
+  /* or simply omit this line */
+
+
 }
 
-/* Skill-row styles */
-.skill-row {
+.background-image {
+  background-image: url('./asets/test.jpg');
+  /* Ensure the path is correct */
+  background-size: cover;
+  background-position: cover;
+  background-repeat: no-repeat;
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 1rem;
 }
 
-/* Accessibility improvements */
-a:focus,
-button:focus {
-  outline: 2px solid blue;
-  /* Specify the outline color and style */
-}
-
-/* Base font size for responsive text sizing */
-html {
-  font-size: 100%;
-  /* this equals to 16px */
-}
-
-
-
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: .5rem;
-  /* adds space below headings */
-  font-weight: bolder;
-  /* optional: reduces the boldness if preferred */
-  color: withe;
-  font-size: 18px;
-}
-
-p {
-  margin-bottom: 1rem;
-  /* adds space between paragraphs */
-}
-
-a {
-  color: white;
-  /* ensures links are noticeable */
-  text-decoration: none;
-  /* removes underline from links */
-  font-size: 1.5em;
-  margin-left: 2em;
-
-}
-
-a:hover,
-a:focus {
-  text-decoration: underline;
-  /* adds underline on hover/focus for better indication */
-}
-
-/* For screen readers only */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
-.work {
-  margin-left: 25em;
-}
-
-
-
-
-
-/*Mobile*/
-@media screen and (min-width: 480px){
-  html, body {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    justify-content:center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    height: 100vh; /* Optional: You can set a height to center vertically within the viewport */
-    font-size: 18px; 
-  } 
+@media screen and (min-width: 768px) {
+  .links {
+    text-align: center;
+    display: inline-block;
     
 
-    }
-    nav ul li {
-      display: flexbox;
-      flex-direction: column;
-      text-align: center;
-      
-      
-    }
-    .skill-row {
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: 1rem;
-    }
+  }
+
+  nav ul li {
+    padding-top: 5rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    flex-direction: row;
+    /* Ensure this color is readable on your background */
+    font-size: 14px;
     
+  }
 
+  a {
+    color: white;
+    /* ensures links are noticeable */
+    text-decoration: none;
+    /* removes underline from links */
+    font-size: 1.5em;
+    margin-left: 2em;
 
-/*Tablet*/
- @media screen and (min-width: 768px) {
+  }
 
- }
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+    /* adds underline on hover/focus for better indication */
+  }
 
-  
-
-footer {
-  background-color: transparent; /* or simply omit this line */
 }
-
-
-   
