@@ -163,7 +163,7 @@ a:focus {
 }
 
 /* Add these styles to your existing CSS rules where appropriate */
-.nav-button {
+.nav {
   padding: 10px 20px;
   background-color: blue;
   color: white;
@@ -175,8 +175,23 @@ a:focus {
   /* Allows padding and width/height to be set */
   text-align: center;
   /* Centers the text */
-}
+  
 
+    /* this */
+    flex: 1 100px;
+  
+    /* is the same as */
+    flex-grow: 1;
+    flex-basis: 100px;
+  
+    /* and it leaves the flex-shrink property alone, which would be */
+    flex-shrink: inherit;
+}
+nav ul li {
+  display: flexbox;
+  flex-direction: row;
+  
+}
 
 /*Mobile*/
 @media screen and (min-width: 480px){
@@ -187,7 +202,12 @@ a:focus {
     align-items: center; /* Center items vertically */
     height: 100vh; /* Optional: You can set a height to center vertically within the viewport */
     font-size: 18px; 
-  }
+  } #header {
+    position:fixed;
+    top:0;
+    
+
+    }
 }
 
 /*Tablet*/
