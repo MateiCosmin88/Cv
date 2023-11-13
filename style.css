@@ -25,11 +25,11 @@ body {
 .background-image {
   background-image: url('./asets/test.jpg');
   /* Ensure the path is correct */
-  background-size: cover;
-  background-position: center;
+  background-size:cover;
+  background-position:cover;
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: column
+
 }
 .profile{
   max-height: 200px;
@@ -63,9 +63,7 @@ nav  {
 /* Main content styles */
 
 
-section {
-  margin-bottom: 1rem;
-}
+
 
 /* Footer styles */
 footer {
@@ -220,6 +218,8 @@ nav ul li {
 footer {
   background-color: transparent; /* or simply omit this line */
 }
-
+html {
+  overflow:hidden;
+}
  
    
