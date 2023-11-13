@@ -72,6 +72,7 @@ a:focus {
   /* adds underline on hover/focus for better indication */
 }
 
+
 footer {
   text-align: center;
   margin: 7px;
@@ -131,5 +132,54 @@ footer {
     text-decoration: underline;
     /* adds underline on hover/focus for better indication */
   }
+
+}
+
+@media screen and (min-width: 992px) {
+  .links {
+    text-align: center;
+    display: inline-block;
+    
+
+  }
+
+  nav ul li {
+    padding-top: 5rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    flex-direction: row;
+    /* Ensure this color is readable on your background */
+    font-size: 14px;
+    
+  }
+
+  a {
+    color: white;
+    /* ensures links are noticeable */
+    text-decoration: none;
+    /* removes underline from links */
+    font-size: 1.5em;
+    margin-left: 1em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 1em;
+
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+    /* adds underline on hover/focus for better indication */
+  }
+  .skill-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+  }
+  
 
 }
