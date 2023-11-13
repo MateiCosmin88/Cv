@@ -19,7 +19,18 @@ body {
   height: 100%;
   width: 100%;
   overflow-x:hidden;
- 
+  font-family: 'Roboto', 'Arial', sans-serif;
+  /* Specify fallback font */
+  font-weight: bold;
+  line-height: 1.6;
+  /* this increases the space between lines */
+  color: #333;
+  /* a darker shade for better readability */
+  background-color: #f4f4f4;
+  /* a light shade that does not strain the eyes */
+  color: aliceblue;
+  margin: 0;
+  background-image: url('/path/to/image.jpg');
   
    
 }
@@ -73,10 +84,12 @@ section {
 /* Footer styles */
 footer {
   text-align: center;
-  padding: 1rem;
+  margin-bottom: -5px;
   background: rgba(0, 0, 0, 0.7);
   /* Semi-transparent black */
   color: white;
+  display: inline-flex;
+  vertical-align: top;
 }
 
 /* Skill-row styles */
@@ -99,20 +112,7 @@ html {
   /* this equals to 16px */
 }
 
-body {
-  font-family: 'Roboto', 'Arial', sans-serif;
-  /* Specify fallback font */
-  font-weight: bold;
-  line-height: 1.6;
-  /* this increases the space between lines */
-  color: #333;
-  /* a darker shade for better readability */
-  background-color: #f4f4f4;
-  /* a light shade that does not strain the eyes */
-  color: aliceblue;
-  
-  background-image: url('/path/to/image.jpg');
-}
+
 
 
 
@@ -200,20 +200,31 @@ nav ul li {
 
 /*Mobile*/
 @media screen and (min-width: 480px){
-  body {
+  html, body {
     display: flex;
     flex-direction: column; /* Stack items vertically */
-    justify-content: flex-start; /* Center items horizontally */
+    justify-content:center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
     height: 100vh; /* Optional: You can set a height to center vertically within the viewport */
     font-size: 18px; 
-  } #header {
-    position:fixed;
-    top:0;
+  } 
     
 
     }
-}
+    nav ul li {
+      display: flexbox;
+      flex-direction: column;
+      text-align: center;
+      
+      
+    }
+    .skill-row {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 1rem;
+    }
+    
+
 
 /*Tablet*/
  @media screen and (min-width: 768px) {
@@ -225,5 +236,6 @@ nav ul li {
 footer {
   background-color: transparent; /* or simply omit this line */
 }
+
 
    
