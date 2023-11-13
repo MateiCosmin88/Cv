@@ -102,15 +102,17 @@ footer {
   }
 
   nav ul li {
-    padding-top: 5rem;
-    padding: 0;
-    margin: 0;
+    padding: 0;  
+    margin:0;
     text-align: center;
     color: white;
     display: inline-block;
     flex-direction: row;
     /* Ensure this color is readable on your background */
     font-size: 14px;
+    position: relative;
+    margin: 2px;
+    padding: 2px;
     
   }
 
@@ -124,6 +126,10 @@ footer {
     justify-content: center;
     align-items: center;
     display: flex;
+    border: black !important;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    margin-bottom: 5px;
 
   }
 
@@ -161,7 +167,7 @@ footer {
     /* ensures links are noticeable */
     text-decoration: none;
     /* removes underline from links */
-    font-size: 1.5em;
+    font-size: 3em;
     margin-left: 1em;
     justify-content: center;
     align-items: center;
