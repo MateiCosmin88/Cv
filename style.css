@@ -94,7 +94,12 @@ footer {
   background-repeat: no-repeat;
   display: flex;
 }
-
+#bttab {
+  border:solid black ;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  margin-bottom: 5px;
+}
 @media screen and (min-width: 768px) {
   .links {
     text-align: center;
@@ -103,7 +108,7 @@ footer {
 
   }
 
-  nav  {
+  nav ul li {
     padding: 0;  
     margin:0;
     text-align: center;
@@ -152,7 +157,7 @@ footer {
   nav ul li {
     padding-top: 5rem;
     padding: 0;
-  
+    margin: 0;
     text-align: center;
     color: white;
     display: inline-block;
