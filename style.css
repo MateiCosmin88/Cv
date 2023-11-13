@@ -112,6 +112,7 @@ footer {
     
 
   }
+  
 
   nav ul li {  
     text-align: center;
@@ -145,7 +146,18 @@ footer {
     text-decoration: underline;
     /* adds underline on hover/focus for better indication */
   }
-  
+  #bttab {
+    border: black ;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    margin-bottom: 5px;
+    margin-left: 13em;
+    margin-right: 13em;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
 
 }
 
@@ -159,8 +171,8 @@ footer {
 
   nav ul li {
     padding-top: 5rem;
-    padding: 0;
-    margin: 0;
+    padding: 5px;
+    margin: 5px;
     text-align: center;
     color: white;
     display: inline-block;
@@ -175,13 +187,13 @@ footer {
     /* ensures links are noticeable */
     text-decoration: none;
     /* removes underline from links */
-    font-size: 3em;
+    font-size: 2em;
     margin-left: 1em;
     justify-content: center;
     align-items: center;
     display: flex;
     margin-bottom: 1em;
-    background-color: transparent !important;
+    background-color: transparent, !important;
     border: none !important;
 
   }
