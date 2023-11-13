@@ -49,6 +49,28 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+a {
+  color: white;
+  /* ensures links are noticeable */
+  text-decoration: none;
+  /* removes underline from links */
+  font-size: 1.5em;
+  margin-left: auto;
+
+
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  /* adds underline on hover/focus for better indication */
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  /* adds underline on hover/focus for better indication */
+}
 
 footer {
   text-align: center;
@@ -99,7 +121,7 @@ footer {
     text-decoration: none;
     /* removes underline from links */
     font-size: 1.5em;
-    margin-left: 2em;
+    margin-left: auto;
 
   }
 
