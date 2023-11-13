@@ -62,11 +62,12 @@ header ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap:inherit;
   color: white;
 }
 
 nav  {
+  padding-top: 3rem;
   text-decoration: none;
   color: white;
   display: flex;
@@ -167,36 +168,9 @@ a:focus {
   margin-left: 25em;
 }
 
-/* Add these styles to your existing CSS rules where appropriate */
-.nav {
-  padding: 10px 20px;
-  background-color: blue;
-  color: white;
-  text-decoration: none;
-  /* Removes the underline from links */
-  border: none;
-  border-radius: 5px;
-  display: inline-block;
-  /* Allows padding and width/height to be set */
-  text-align: center;
-  /* Centers the text */
-  
 
-    /* this */
-    flex: 1 100px;
-  
-    /* is the same as */
-    flex-grow: 1;
-    flex-basis: 100px;
-  
-    /* and it leaves the flex-shrink property alone, which would be */
-    flex-shrink: inherit;
-}
-nav ul li {
-  display: flexbox;
-  flex-direction: row;
-  
-}
+
+
 
 /*Mobile*/
 @media screen and (min-width: 480px){
